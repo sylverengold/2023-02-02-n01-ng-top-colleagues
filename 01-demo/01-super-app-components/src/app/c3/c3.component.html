@@ -1,0 +1,13 @@
+<h2>Parent</h2>
+
+<section>
+  <h3 *ngIf="titreAffiche">Mes enfants</h3>
+  <ul>
+    <li *ngFor="let texte of enfantParle">
+      {{texte}}
+    </li>
+  </ul>
+  <app-c4 (intervention)="ecouterEnfant($event)"></app-c4>
+  <app-c4></app-c4>
+
+</section>
