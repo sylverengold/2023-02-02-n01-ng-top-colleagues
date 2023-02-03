@@ -1,11 +1,14 @@
 div.colleague{
-  border:1em;
-  border-radius: 0.5em;
-  border-color: black;
+  border-radius: 2.5em;
+  border: thick double darkcyan;
+  width:16%;
+  float:left;
+  margin: 2%;
+  padding:2%;
 }
   div.score{
-    margin:1em;
-    padding:1em;
+    margin:0;
+    padding:0;
     font-weight: bold;
     text-align: center;
     font-size: 200%;
@@ -13,8 +16,8 @@ div.colleague{
     padding-top: 0.1em;
   }
   div.text_score{
-    margin:1em;
-    padding:1em;
+    margin:0;
+    padding:0;
     font-weight: bold;
     text-align: center;
     font-size: 100%;
@@ -22,8 +25,8 @@ div.colleague{
     padding-bottom: 0.1em;
   }
   div.img_col{
-    margin:1em;
-    padding:1em;
+    margin:0;
+    padding:0;
     text-align: center;
   }
 

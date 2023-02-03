@@ -6,27 +6,29 @@ import {Component, EventEmitter, Input, Output} from '@angular/core';
   styleUrls: ['./colleague.component.scss']
 })
 export class ColleagueComponent {
+  @Input() public score_c:number = 100;
+  @Input()  public name_c:string = '';
+  @Input()  public num_img:number = 200;
 
-  public score:number = 100;
   public reput:string = 'un Ami';
   vote(v:boolean){
     if (v == true) {
-      this.score = this.score + 1;
+      this.score_c = this.score_c + 1;
     } else {
-      this.score = this.score - 1;
+      this.score_c = this.score_c - 1;
     };
 
 
-    if(this.score >= 130){
+    if(this.score_c >= 130){
       this.reput = "une Idole";
     }
-    else if ( this.score >= 110){
+    else if ( this.score_c >= 110){
       this.reput = "une Star";
     }
-    else if (this.score >= 90){
+    else if (this.score_c >= 90){
   this.reput = "un Ami";
     }
-    else if (this.score >= 70){
+    else if (this.score_c >= 70){
       this.reput = "un Bouffon";
     }
   else{
