@@ -1,20 +1,39 @@
 button.button_hl{
   margin:1%;
   padding: 1%;
-  box-shadow: 0.3em 0.6em;
+  box-shadow: 0.15em 0.3em darkcyan;
   border-radius:1em;
+  border-color: darkcyan;
+  width:46%;
+  line-height:2.5em;
+  border-width: 0;
 }
-
+button.button_hl:hover {
+  cursor: grab;
+}
 button.button_hl span{
-color:white;
+  color:white;
+  font-weight: bold;
+  text-transform: uppercase;
+
 }
 
 button.hate{
   background-color: red;
+  font-weight: bold;
 }
 
 button.like{
   background-color: green;
+}
+
+button.hate:hover{
+  background-color: fuchsia;
+  font-weight: bold;
+}
+
+button.like:hover{
+  background-color: greenyellow;
 }
 
 div.button_hl{
