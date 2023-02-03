@@ -2,7 +2,21 @@ button.button_hl{
   margin:1%;
   padding: 1%;
   box-shadow: 0.3em 0.6em;
+  border-radius:1em;
 }
+
+button.button_hl span{
+color:white;
+}
+
+button.hate{
+  background-color: red;
+}
+
+button.like{
+  background-color: green;
+}
+
 div.button_hl{
   text-align: center;
 }
