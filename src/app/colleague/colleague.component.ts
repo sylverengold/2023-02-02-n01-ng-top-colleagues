@@ -6,38 +6,38 @@ import {Component, EventEmitter, Input, Output} from '@angular/core';
   styleUrls: ['./colleague.component.scss']
 })
 export class ColleagueComponent {
-  @Input() public score_c:number = 100;
+  @Input() public score_c:number = 0;
   @Input()  public name_c:string = '';
-  @Input()  public num_img:number = 200;
+  @Input()  public img_c:string = '';
+  @Input()  public num_img:number = 0;
 
-  public reput:string = 'un Ami';
+  public reput:string = this.reputation(this.score_c);
+
+  reputation(sc:number) {
+    let rp:string;
+    if (sc >= 130) {
+      rp = "une Idole";
+    } else if (sc >= 110) {
+      rp = "une Star";
+    } else if (sc >= 90) {
+      rp = "un Ami";
+    } else if (sc >= 70) {
+      rp = "un Bouffon";
+    } else {
+      rp = "un Monstre";
+    } ;
+    return rp;
+  }
+
   vote(v:boolean){
+
     if (v == true) {
       this.score_c = this.score_c + 1;
     } else {
       this.score_c = this.score_c - 1;
     };
-
-
-    if(this.score_c >= 130){
-      this.reput = "une Idole";
-    }
-    else if ( this.score_c >= 110){
-      this.reput = "une Star";
-    }
-    else if (this.score_c >= 90){
-  this.reput = "un Ami";
-    }
-    else if (this.score_c >= 70){
-      this.reput = "un Bouffon";
-    }
-  else{
-  this.reput = "un Monstre";
-    };
-
-
+    this.reput = this.reputation(this.score_c);
   }
-
 
 
 }
