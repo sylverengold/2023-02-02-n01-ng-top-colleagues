@@ -14,6 +14,7 @@ export class ColleagueComponent {
   @Input()  public old_sc:number[] = [];
   @Input()  public ci:boolean = true;
 
+
   public reput:string = this.reputation(this.score_c,this.ci);
 
   reputation(sc:number, ci:boolean) {
@@ -32,20 +33,22 @@ export class ColleagueComponent {
     } ;
     return rp;
   }
+  public nbLike2:number =(Math.floor(Math.random() * (500 - 10) + 10));
+  public nbHate2:number = this.nbLike2;
 
   vote2(v:boolean){
     if (v == true) {
 
       this.score_c = this.score_c + 1;
-
+      this.nbLike2 = this.nbLike2 + 1;
     } else {
 
       this.score_c = this.score_c - 1;
+      this.nbHate2 = this.nbHate2 + 1;
     };
     this.reput = this.reputation(this.score_c,this.ci);
 
   }
-
 
 
 
