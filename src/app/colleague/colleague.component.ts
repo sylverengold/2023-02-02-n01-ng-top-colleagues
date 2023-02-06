@@ -34,7 +34,7 @@ export class ColleagueComponent {
     return rp;
   }
   public nbLike2:number =(Math.floor(Math.random() * (500 - 10) + 10));
-  public nbHate2:number = this.nbLike2;
+  public nbHate2:number = (Math.floor(Math.random() * (500 - 10) + 10));
 
   vote2(v:boolean){
     if (v == true) {
@@ -49,7 +49,6 @@ export class ColleagueComponent {
     this.reput = this.reputation(this.score_c,this.ci);
 
   }
-
 
 
 
