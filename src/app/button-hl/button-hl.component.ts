@@ -8,7 +8,7 @@ import {Component, EventEmitter, Output} from '@angular/core';
 export class ButtonHLComponent {
 
   @Output()change:EventEmitter<boolean>=new EventEmitter<boolean>();
-    vote(v:boolean){
+    vote3(v:boolean){
       this.change.emit(v);
     }
 

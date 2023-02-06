@@ -1,8 +1,12 @@
 <div class="colleague">
+  <div >{{id_coll}}</div>
 <div class="img_col"><img src="assets/public/{{img_c}}"></div>
 <div class="score">{{name_c}}</div>
 <div class="score">{{score_c}}</div>
 <div class="text_score">T'es considéré comme</div>
 <div class="score">{{reputation(score_c)}}</div>
-<tc-button-hl (change)="vote($event)"></tc-button-hl>
+<tc-button-hl (change)="vote2($event)"></tc-button-hl>
+  <div style="width:100%;float:left;height: 2em;">
+    <span *ngFor="let score of old_sc" style="float:left">{{score}}</span>
+  </div>
 </div>

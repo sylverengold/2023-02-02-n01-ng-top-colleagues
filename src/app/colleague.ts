@@ -3,6 +3,5 @@ export interface Colleague {
   score:number;
   name:string;
   imgg:string;
-
-  old_score:[number];
+  old_score:number[];
 }

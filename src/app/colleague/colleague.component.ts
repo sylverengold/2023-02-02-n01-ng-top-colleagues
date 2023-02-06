@@ -9,7 +9,8 @@ export class ColleagueComponent {
   @Input() public score_c:number = 0;
   @Input()  public name_c:string = '';
   @Input()  public img_c:string = '';
-  @Input()  public num_img:number = 0;
+  @Input()  public id_coll:number = 0;
+  @Input()  public old_sc:number[] = [];
 
   public reput:string = this.reputation(this.score_c);
 
@@ -29,14 +30,22 @@ export class ColleagueComponent {
     return rp;
   }
 
-  vote(v:boolean){
 
+  @Output()change2:EventEmitter<[number,number]>=new EventEmitter<[number,number]>();
+
+
+  vote2(v:boolean){
+    this.change2.emit([this.score_c,this.id_coll]);
     if (v == true) {
+
       this.score_c = this.score_c + 1;
+
     } else {
+
       this.score_c = this.score_c - 1;
     };
     this.reput = this.reputation(this.score_c);
+
   }
 
 
