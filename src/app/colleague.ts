@@ -6,6 +6,5 @@ export interface Colleague {
   name:string;
   imgg:string;
   old_score:number[];
-
-
+  ci:boolean;
 }

@@ -12,19 +12,21 @@ export class ColleagueComponent {
   @Input()  public img_c:string = '';
   @Input()  public id_coll:number = 0;
   @Input()  public old_sc:number[] = [];
+  @Input()  public ci:boolean = true;
 
-  public reput:string = this.reputation(this.score_c);
+  public reput:string = this.reputation(this.score_c,this.ci);
 
-  reputation(sc:number) {
+  reputation(sc:number, ci:boolean) {
     let rp:string;
     if (sc >= 130) {
       rp = "une Idole";
     } else if (sc >= 110) {
       rp = "une Star";
     } else if (sc >= 90) {
-      rp = "un Ami";
+      if (ci == false){ rp = "un Ami";}else { rp = "une Amie";}
+
     } else if (sc >= 70) {
-      rp = "un Bouffon";
+      if (ci == false){ rp = "un Bouffon";}else { rp = "une Pouffe";}
     } else {
       rp = "un Monstre";
     } ;
@@ -40,7 +42,7 @@ export class ColleagueComponent {
 
       this.score_c = this.score_c - 1;
     };
-    this.reput = this.reputation(this.score_c);
+    this.reput = this.reputation(this.score_c,this.ci);
 
   }
 

@@ -4,7 +4,7 @@
 <div class="score">{{name_c}}</div>
 <div class="score">{{score_c}}</div>
 <div class="text_score">T'es considéré comme</div>
-<div class="score">{{reputation(score_c)}}</div>
+<div class="score">{{reputation(score_c,ci)}}</div>
 <tc-button-hl (change)="vote2($event)"></tc-button-hl>
   <div style="width:100%;float:left;height: 2em;">
     <span *ngFor="let score of old_sc" style="float:left">{{score}}</span>
