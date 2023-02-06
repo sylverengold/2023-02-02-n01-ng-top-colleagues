@@ -1,4 +1,5 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
+import {ColleagueService} from "../providers/colleague.service";
 
 @Component({
   selector: 'tc-colleague',
@@ -30,12 +31,7 @@ export class ColleagueComponent {
     return rp;
   }
 
-
-  @Output()change2:EventEmitter<[number,number]>=new EventEmitter<[number,number]>();
-
-
   vote2(v:boolean){
-    this.change2.emit([this.score_c,this.id_coll]);
     if (v == true) {
 
       this.score_c = this.score_c + 1;
@@ -47,6 +43,10 @@ export class ColleagueComponent {
     this.reput = this.reputation(this.score_c);
 
   }
+
+
+
+
 
 
 }
