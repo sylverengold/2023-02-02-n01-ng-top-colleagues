@@ -5,6 +5,7 @@ export interface Colleague {
   score:number;
   name:string;
   imgg:string;
-  old_score:number[];
   ci:boolean;
+  scLike:number;
+  scHate:number;
 }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import{Observable,fromEvent}from'rxjs';
+import {AlbumService} from "../../../providers/album.service";
 @Component({
   selector: 'tc-counter',
   templateUrl: './counter.component.html',
@@ -8,11 +9,11 @@ import{Observable,fromEvent}from'rxjs';
 
 //const obs$ = fromEvent(document.querySelector("input"),'click');
 export class CounterComponent {
-
-  sumVote:number=0;
-
-
-
+  nb = 0;
 }
+
+
+
+
 
 

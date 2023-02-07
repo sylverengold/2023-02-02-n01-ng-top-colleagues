@@ -11,7 +11,8 @@ export class ColleagueComponent {
   @Input()  public name_c:string = '';
   @Input()  public img_c:string = '';
   @Input()  public id_coll:number = 0;
-  @Input()  public old_sc:number[] = [];
+  @Input()  public scLike:number = 0;
+  @Input()  public scHate:number = 0;
   @Input()  public ci:boolean = true;
 
 
@@ -33,18 +34,17 @@ export class ColleagueComponent {
     } ;
     return rp;
   }
-  public nbLike2:number =(Math.floor(Math.random() * (500 - 10) + 10));
-  public nbHate2:number = (Math.floor(Math.random() * (500 - 10) + 10));
+
 
   vote2(v:boolean){
     if (v == true) {
 
       this.score_c = this.score_c + 1;
-      this.nbLike2 = this.nbLike2 + 1;
+      this.scLike = this.scLike + 1;
     } else {
 
       this.score_c = this.score_c - 1;
-      this.nbHate2 = this.nbHate2 + 1;
+      this.scHate = this.scHate + 1;
     };
     this.reput = this.reputation(this.score_c,this.ci);
 

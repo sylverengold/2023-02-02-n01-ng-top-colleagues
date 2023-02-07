@@ -7,6 +7,8 @@ import { ColleagueComponent } from './colleague/colleague.component';
 import { ListColleaguesComponent } from './list-colleagues/list-colleagues.component';
 import { CounterComponent } from './shared/components/counter/counter.component';
 import { VotesComponent } from './votes/votes.component';
+import { ListAlbumComponent } from './shared/components/list-album/list-album.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -15,10 +17,12 @@ import { VotesComponent } from './votes/votes.component';
     ColleagueComponent,
     ListColleaguesComponent,
     CounterComponent,
-    VotesComponent
+    VotesComponent,
+    ListAlbumComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
