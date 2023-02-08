@@ -1,21 +1,25 @@
-<ul>
-  <li>Nom : {{info.nom}}</li>
-  <li>Email : {{info.email}}</li>
-  <li>Tel : {{info.tel}}</li>
-</ul>
-<div>
+<div class="form_c">
+<div class="nom">
+<span>Nom : {{info.nom}}</span>
+  <span>Email : {{info.email}}</span>
+  <span>Tel : {{info.tel}}</span>
+</div>
+<div class="button_f">
   <input type="text"
-         [(ngModel)]="comment.message">
-  <button (click)="addComment()" [disabled]="newComment">
-    Add Comment
+         [(ngModel)]="comment.message"  class="input_f" placeholder="blabla">
+  <button (click)="addComment()" [disabled]="newComment" class="button_f">
+    <span>Add Comment</span>
   </button>
 </div>
+<div class="nom">
 <div *ngIf="comments.length>1">
   <h3>Liste des messages</h3>
-  <li *ngFor="let c of comments">
+  <span *ngFor="let c of comments">
     {{c.date|date: "M/d/yy"}} : {{c.message}}
-  </li>
+  </span>
   <ng-template  *ngIf="comments.length==1">
     <p>Liste des commentaires est vide</p>
   </ng-template>
+</div>
+</div>
 </div>

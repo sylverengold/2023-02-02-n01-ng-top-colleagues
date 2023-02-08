@@ -13,6 +13,4 @@ export class ListColleaguesComponent {
   }
 list_colleagues = this.srv.getListColleagues();
 
-
-
 }

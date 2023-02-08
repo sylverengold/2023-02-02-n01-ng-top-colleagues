@@ -7,7 +7,7 @@ import {DatePipe} from "@angular/common";
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent {
-info={ nom: "Mephisto",email:"m.pheles@.enfer.com", tel:"666"};
+info={ nom: "Mephisto",email:"m.pheles@.enfer.com", tel:"666-666-666"};
 
 
 comment ={date:"", message:""};

@@ -12,6 +12,7 @@ import {HttpClientModule} from "@angular/common/http";
 import { CompteurComponent } from './compteur/compteur.component';
 import { AboutComponent } from './about/about.component';
 import {FormsModule} from "@angular/forms";
+import { FormColleagueComponent } from './form-colleague/form-colleague.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {FormsModule} from "@angular/forms";
     VotesComponent,
     ListAlbumComponent,
     CompteurComponent,
-    AboutComponent
+    AboutComponent,
+    FormColleagueComponent
   ],
     imports: [
         BrowserModule,

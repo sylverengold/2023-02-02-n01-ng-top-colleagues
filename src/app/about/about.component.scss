@@ -1,0 +1,57 @@
+div.form_c{
+  width:70%;
+  margin-left : 15%;
+  margin-right : 15%;
+}
+div.form_c span {
+  width:100%;
+  float:left;
+
+}
+div.nom{
+  margin:0;
+  padding:0;
+  font-weight: bold;
+  text-align: center;
+  font-size: 200%;
+  margin-top: 0.1em;
+  padding-top: 0.1em;
+}
+button.button_f{
+  margin:1%;
+  padding: 1%;
+  box-shadow: 0.15em 0.3em darkcyan;
+  border-radius:1em;
+  border-color: darkcyan;
+  width:10%;
+  line-height:1em;
+  border-width: 0;
+  background-color: green;
+}
+
+input.input_f{
+  margin:1%;
+  padding: 1%;
+  box-shadow: 0.15em 0.3em darkcyan;
+  border-radius:1em;
+  border-color: darkcyan;
+  width:10%;
+  line-height:1em;
+  border-width: 0;
+  background-color: #eeeeee;
+}
+button.button_f:hover {
+  cursor: grab;
+}
+button.button_f span{
+  color:white;
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
+
+
+
+div.button_f{
+  text-align: center;
+}
