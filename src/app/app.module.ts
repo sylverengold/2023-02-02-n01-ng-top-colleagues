@@ -9,6 +9,9 @@ import { CounterComponent } from './shared/components/counter/counter.component'
 import { VotesComponent } from './votes/votes.component';
 import { ListAlbumComponent } from './shared/components/list-album/list-album.component';
 import {HttpClientModule} from "@angular/common/http";
+import { CompteurComponent } from './compteur/compteur.component';
+import { AboutComponent } from './about/about.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -18,12 +21,15 @@ import {HttpClientModule} from "@angular/common/http";
     ListColleaguesComponent,
     CounterComponent,
     VotesComponent,
-    ListAlbumComponent
+    ListAlbumComponent,
+    CompteurComponent,
+    AboutComponent
   ],
-  imports: [
-    BrowserModule,
-    HttpClientModule
-  ],
+    imports: [
+        BrowserModule,
+        HttpClientModule,
+        FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -1,0 +1,21 @@
+<ul>
+  <li>Nom : {{info.nom}}</li>
+  <li>Nom : {{info.email}}</li>
+  <li>Nom : {{info.tel}}</li>
+</ul>
+<div>
+  <input type="text"
+         [(ngModel)]="comment.message">
+  <button (click)="addComment()" [disabled]="newComment">
+    Add Comment
+  </button>
+</div>
+<div *ngIf="comments.length>1">
+  <h3>Liste des messages</h3>
+  <li *ngFor="let c of comments">
+    {{c.date|date: "M/d/yy"}} : {{c.message}}
+  </li>
+  <ng-template  *ngIf="comments.length==1">
+    <p>Liste des commentaires est vide</p>
+  </ng-template>
+</div>
