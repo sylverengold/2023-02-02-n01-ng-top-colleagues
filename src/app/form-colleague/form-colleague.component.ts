@@ -10,7 +10,7 @@ import {ColleagueService} from "../providers/colleague.service";
 })
 export class FormColleagueComponent {
 
-  c:Colleague = {id: 0,name: '', score: 0, imgg: '',scLike:0,scHate:0,ci:false};
+  c:Colleague = {id: 0,name: '', score: 0, imgg: '',scLike:0,scHate:0,ci:false,dateNaissance:'',dateDeces:'',pays:''};
 
   constructor(private srv:ColleagueService){
   }
@@ -18,7 +18,7 @@ export class FormColleagueComponent {
   list_colleagues:Colleague[]=[];
   newColleague(){
     if(this.c.name !=''){
-      this.c = {id: 0,name: '', score: 0, imgg: '',scLike:0,scHate:0,ci:false};
+      this.c = {id: 0,name: '', score: 0, imgg: '',scLike:0,scHate:0,ci:false,dateNaissance:'',dateDeces:'',pays:''};
       this.list_colleagues = this.srv.getListColleagues();
       this.list_colleagues.push(this.c);
     }

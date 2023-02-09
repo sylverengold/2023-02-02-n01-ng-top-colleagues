@@ -8,4 +8,8 @@ export interface Colleague {
   ci:boolean;
   scLike:number;
   scHate:number;
+  dateNaissance : string;
+  dateDeces:string;
+  pays:string;
+
 }

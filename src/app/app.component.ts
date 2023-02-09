@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import {AlbumService} from "./providers/album.service";
 import {albumExterne} from "./models/album-externe";
-
-
+import { AppModule } from './app.module';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 @Component({
   selector: 'tc-root',
   templateUrl: './app.component.html',
@@ -12,15 +12,12 @@ export class AppComponent {
   title = 'top-colleagues';
 
 albums: albumExterne[] = [];
-constructor(private AlbumSrv: AlbumService) {
- }
-
-
-rafraichir() {
-this.AlbumSrv.rechercherAlbum()
-.subscribe(albumExterne => this.albums.push(albumExterne));
-this.AlbumSrv.rafraichir();
- }
+constructor(private AlbumSrv: AlbumService) {}
+//rafraichir() {
+//this.AlbumSrv.rechercherAlbum()
+//.subscribe(albumExterne => this.albums.push(albumExterne));
+//this.AlbumSrv.rafraichir();
+ //}
 
 
 

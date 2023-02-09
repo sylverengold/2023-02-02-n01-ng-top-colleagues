@@ -4,16 +4,22 @@
   <span>Email : {{info.email}}</span>
   <span>Tel : {{info.tel}}</span>
 </div>
+
+
+    <div class="nom">
+  <span>Un souhait pour une damnation?</span>
+  <span class="reponse">Réponse sous 48 mois</span>
+    </div>
 <div class="button_f">
   <input type="text"
          [(ngModel)]="comment.message"  class="input_f" placeholder="blabla">
   <button (click)="addComment()" [disabled]="newComment" class="button_f">
-    <span>Add Comment</span>
+    <span>Faire un souhait</span>
   </button>
 </div>
 <div class="nom">
 <div *ngIf="comments.length>1">
-  <h3>Liste des messages</h3>
+  <h3>Liste des souhait :</h3>
   <span *ngFor="let c of comments">
     {{c.date|date: "M/d/yy"}} : {{c.message}}
   </span>

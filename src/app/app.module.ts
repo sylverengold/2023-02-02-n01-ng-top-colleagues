@@ -10,9 +10,13 @@ import { VotesComponent } from './votes/votes.component';
 import { ListAlbumComponent } from './shared/components/list-album/list-album.component';
 import {HttpClientModule} from "@angular/common/http";
 import { CompteurComponent } from './compteur/compteur.component';
-import { AboutComponent } from './about/about.component';
+import {AboutComponent} from './about/about.component';
 import {FormsModule} from "@angular/forms";
 import { FormColleagueComponent } from './form-colleague/form-colleague.component';
+import { FormColleaguesCodeComponent } from './form-colleagues-code/form-colleagues-code.component';
+import {RouterModule} from "@angular/router";
+import {routes} from "./app.routes";
+
 
 @NgModule({
   declarations: [
@@ -25,13 +29,15 @@ import { FormColleagueComponent } from './form-colleague/form-colleague.componen
     ListAlbumComponent,
     CompteurComponent,
     AboutComponent,
-    FormColleagueComponent
+    FormColleagueComponent,
+    FormColleaguesCodeComponent
   ],
-    imports: [
-        BrowserModule,
-        HttpClientModule,
-        FormsModule
-    ],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    FormsModule,
+    RouterModule.forRoot(routes)
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

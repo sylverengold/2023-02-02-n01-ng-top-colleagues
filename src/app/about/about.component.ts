@@ -11,6 +11,7 @@ info={ nom: "Mephisto",email:"m.pheles@.enfer.com", tel:"666-666-666"};
 
 
 comment ={date:"", message:""};
+  //comments=[{date:"", message:""}];
   comments=[{date:"", message:""}];
 newComment = false;
 addComment(){

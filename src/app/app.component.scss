@@ -1,3 +1,29 @@
 div.body_coll {
   background-color:darkcyan;
 }
+a.a_menu{
+  display:block;
+  width:10em;
+  height:2em;
+  margin:1%;
+  padding: 1%;
+  box-shadow: 0.15em 0.3em darkcyan;
+  border-radius:1em;
+  border-color: darkcyan;
+  width:15%;
+  line-height:0.5em;
+  border-width: 0;
+  background-color: green;
+  float: left;
+  text-align: center;
+}
+a.a_menu span{
+  color:white;
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
+a.a_menu:hover{
+  background-color: fuchsia;
+  font-weight: bold;
+}

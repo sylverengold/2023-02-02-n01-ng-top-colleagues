@@ -301,12 +301,25 @@
     }
   }
 </style>
-<tc-form-colleague></tc-form-colleague>
+<header><h1 class="h1_coll">Collègues du Monde</h1></header>
+<nav>
+  <a routerLink="/about" routerLinkActive="active-link" class="a_menu"><span>About666</span></a>
+  <a routerLink="/list" routerLinkActive="active-link" class="a_menu"><span>List Colleagues</span></a>
+  <a routerLink="/requeteJSon" routerLinkActive="active-link" class="a_menu"><span>Result HTTP</span></a>
+  <!--a routerLink="Details" routerLinkActive="active-link" class="a_menu">Details</a-->
+  <div style="clear: both"></div>
+</nav>
+<main><router-outlet></router-outlet></main>
+
+
+<!--tc-form-colleague></tc-form-colleague>
 <tc-compteur></tc-compteur>
 <tc-list-colleagues></tc-list-colleagues>
-<tc-list-album></tc-list-album>
-<hr>
-<button (click)="rafraichir()">Rafraichir</button>
-***
 <tc-about></tc-about>
+<tc-list-album></tc-list-album-->
+<hr>
+<!--button (click)="rafraichir()">Rafraichir</button-->
+
+
+<footer>----</footer>
 
