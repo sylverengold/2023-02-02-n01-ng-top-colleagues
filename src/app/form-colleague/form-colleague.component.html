@@ -1,7 +1,11 @@
-<div class="panel panel-primary">
-  <p style="width:5%">Id : <input type="text"  [(ngModel)]="c.id" required></p><br/>
-  <p style="width:5%">Pseudo : <input type="text"  [(ngModel)]="c.name" required></p><br/>
-  <p style="width:5%">Score : <input type="text"  [(ngModel)]="c.score" required></p>
-  <button (click)="newColleague()" >Ajout</button>
+<div class="form_c">
+  <div class="nom">
+  <p class="p_form">Id : <input type="text"  [(ngModel)]="c.id" required></p><br/>
+    <span style="clear: both"></span>
+    <p class="p_form">Pseudo : <input type="text"  [(ngModel)]="c.name" required></p><br/>
+    <span style="clear: both"></span>
+    <p class="p_form">Score : <input type="text"  [(ngModel)]="c.score" required></p>
+    <span style="clear: both"></span>
+  <button (click)="newColleague()" class="button_f">Ajout</button>
 </div>
-
+</div>
