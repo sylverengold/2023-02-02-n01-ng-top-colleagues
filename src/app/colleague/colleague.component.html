@@ -1,7 +1,11 @@
-<div class="colleague">
+<div  class="colleague">
   <!--div >{{id_coll}}</div-->
 <div class="img_col"><img src="assets/public/{{img_c}}"></div>
 <div class="nom">{{name_c}}</div>
+  <div *ngIf="id_d != 0" class="text_score">{{dateN}} - {{dateD}}</div>
+  <div *ngIf="id_d != 0" class="text_score">{{dateL}}</div>
+
+
 <div class="score">{{score_c}}</div>
 <div class="text_score">T'es considéré comme</div>
 <div class="score">{{reputation(score_c,ci) | uppercase}}</div>
@@ -12,3 +16,5 @@
     <!--tc-votes ></tc-votes-->
   </div>
 </div>
+
+

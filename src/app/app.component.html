@@ -307,9 +307,12 @@
   <a routerLink="/list" routerLinkActive="active-link" class="a_menu"><span>List Colleagues</span></a>
   <a routerLink="/AddList" routerLinkActive="active-link" class="a_menu"><span>Ajout Colleagues</span></a>
   <a routerLink="/requeteJSon" routerLinkActive="active-link" class="a_menu"><span>Result HTTP</span></a>
+  <div style="clear: both"></div>
+   <a *ngFor="let ccc of list_colleagues_m" routerLink="/Detail/{{ccc.id}}" routerLinkActive="active-link" class="a_menu_d"><span> {{ccc.name}}</span></a>
   <!--a routerLink="Details" routerLinkActive="active-link" class="a_menu">Details</a-->
   <div style="clear: both"></div>
 </nav>
+
 <main><router-outlet></router-outlet></main>
 
 
@@ -321,6 +324,6 @@
 <hr>
 <!--button (click)="rafraichir()">Rafraichir</button-->
 
-
+<div style="clear: both"></div>
 <footer>----</footer>
 

@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import {Colleague} from "../colleague";
 import arrayShuffle from "array-shuffle";
+import {ColleagueComponent} from "../colleague/colleague.component";
 
 @Injectable({
   providedIn: 'root'
@@ -26,6 +27,11 @@ export class ColleagueService {
 
   getListColleagues(): Colleague[] {
     return this.list_colleagues;
+  }
+
+  getOneColleagues(idd:number):Colleague | undefined {
+   const cc =this.list_colleagues.find(c=> c.id = idd);
+   return cc;
   }
 
 

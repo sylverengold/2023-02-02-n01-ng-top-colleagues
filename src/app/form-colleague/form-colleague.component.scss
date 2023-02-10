@@ -3,6 +3,7 @@ div.form_c{
   margin-left : 10%;
   margin-right : 10%;
 }
+
 div.form_c span {
   width:100%;
   float:left;
@@ -18,6 +19,7 @@ div.nom{
   padding-top: 0.1em;
   margin-right:35%;
 }
+
 button.button_f{
   margin:1%;
   padding: 1%;
@@ -41,9 +43,11 @@ input.input_f{
   border-width: 0;
   background-color: #eeeeee;
 }
+
 button.button_f:hover {
   cursor: grab;
 }
+
 button.button_f span{
   color:white;
   font-weight: bold;
@@ -51,13 +55,14 @@ button.button_f span{
 
 }
 
-
 span.reponse{
   font-size: 40%;
 }
+
 div.button_f{
   text-align: center;
 }
+
 p.p_form{
 float:right;
 }

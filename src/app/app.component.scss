@@ -4,26 +4,58 @@ div.body_coll {
 a.a_menu{
   display:block;
   width:10em;
-  height:2em;
-  margin:1%;
-  padding: 1%;
+  height:1.2em;
+  margin:0.3%;
+  padding: 0.3%;
+  padding-top: 1%;
   box-shadow: 0.15em 0.3em darkcyan;
   border-radius:1em;
   border-color: darkcyan;
   width:15%;
   line-height:0.5em;
   border-width: 0;
-  background-color: green;
+  background-color: blueviolet;
   float: left;
   text-align: center;
+}
+
+
+a.a_menu_d{
+  display:block;
+  width:10em;
+  height:0.5em;
+  margin:0.3%;
+  padding: 0.3%;
+  padding-top: 0.5%;
+  box-shadow: 0.15em 0.3em darkcyan;
+  border-radius:1em;
+  border-color: darkcyan;
+  width:15%;
+  line-height:0.3em;
+  border-width: 0;
+  background-color: cadetblue;
+  float: left;
+  text-align: center;
+
 }
 a.a_menu span{
   color:white;
   font-weight: bold;
   text-transform: uppercase;
-
 }
+
+a.a_menu_d span{
+  color:white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 a.a_menu:hover{
+  background-color: fuchsia;
+  font-weight: bold;
+}
+
+a.a_menu_d:hover{
   background-color: fuchsia;
   font-weight: bold;
 }
